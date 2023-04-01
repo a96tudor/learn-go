@@ -12,6 +12,12 @@ type User struct {
 	birthday  time.Time
 }
 
+// Associating a function with a struct
+func (m *User) printFirstName() string {
+	log.Println(m.firstName)
+	return m.firstName
+}
+
 func main() {
 	user := User{
 		firstName: "Trevor",
@@ -24,5 +30,10 @@ func main() {
 
 // Private to this package
 func something() {
+
+}
+
+// Visible outside of the package
+func Something() {
 
 }
