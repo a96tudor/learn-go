@@ -1,7 +1,7 @@
 package main
 
 import (
-	"basic-web-app/handlers"
+	"basic-web-app/pkg/handlers"
 	"fmt"
 	"log"
 	"net/http"
